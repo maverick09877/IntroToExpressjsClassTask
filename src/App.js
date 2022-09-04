@@ -94,8 +94,8 @@ function App() {
       </div>
 
       <h1 ref={displayResponse}></h1>
-      <h5>This site has Continuous Integration..</h5>
-      <h5>second attempt</h5>
+
+      <h5>VENKATESHHHHH TYPE ANY BUTTONNNNNN</h5>
     </div>
   );
 }
