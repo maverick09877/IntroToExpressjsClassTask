@@ -8,10 +8,6 @@ function App() {
   // let animeValueInput = useRef();
   // let animeDisplay = useRef();
 
-  document.body.style.cursor = "wait";
-  document.getElementById("buttonContainer").style.cursor = "wait";
-  document.getElementById("animeContainer").style.cursor = "wait";
-
   let getDataFromServer = async (source) => {
     let reqOptions = {
       method: "GET",
@@ -53,12 +49,6 @@ function App() {
   };
   serverTimer();
 
-  setTimeout(() => {
-    document.body.style.cursor = "auto";
-    document.getElementById("buttonContainer").style.cursor = "auto";
-    document.getElementById("animeContainer").style.cursor = "auto";
-  }, 9000);
-
   return (
     <div id="App">
       <div id="buttonContainer">
@@ -68,41 +58,41 @@ function App() {
             getDataFromServer("planets");
           }}
         >
-          PLANETS{" "}
-        </button>{" "}
+          PLANETS
+        </button>
         <button
           type="button"
           onClick={() => {
             getDataFromServer("weekdays");
           }}
         >
-          WEEKDAYS{" "}
-        </button>{" "}
+          WEEKDAYS
+        </button>
         <button
           type="button"
           onClick={() => {
             getDataFromServer("months");
           }}
         >
-          MONTHS{" "}
-        </button>{" "}
-      </div>{" "}
+          MONTHS
+        </button>
+      </div>
       <div id="animeContainer">
         <input
           type="number"
           placeholder="Enter an index number (0-5)"
           ref={animeIndexInput}
-        />{" "}
+        />
         <button
           type="button"
           onClick={() => {
             getDataForAnime();
           }}
         >
-          ANIME{" "}
-        </button>{" "}
+          ANIME
+        </button>
       </div>
-      <h1 ref={displayResponse}> </h1>{" "}
+      <h1 ref={displayResponse}> </h1>
     </div>
   );
 }
