@@ -68,42 +68,41 @@ function App() {
             getDataFromServer("planets");
           }}
         >
-          PLANETS
-        </button>
+          PLANETS{" "}
+        </button>{" "}
         <button
           type="button"
           onClick={() => {
             getDataFromServer("weekdays");
           }}
         >
-          WEEKDAYS
-        </button>
+          WEEKDAYS{" "}
+        </button>{" "}
         <button
           type="button"
           onClick={() => {
             getDataFromServer("months");
           }}
         >
-          MONTHS
-        </button>
-      </div>
+          MONTHS{" "}
+        </button>{" "}
+      </div>{" "}
       <div id="animeContainer">
         <input
           type="number"
           placeholder="Enter an index number (0-5)"
           ref={animeIndexInput}
-        />
+        />{" "}
         <button
           type="button"
           onClick={() => {
             getDataForAnime();
           }}
         >
-          ANIME
-        </button>
+          ANIME{" "}
+        </button>{" "}
       </div>
-
-      <h1 ref={displayResponse}></h1>
+      <h1 ref={displayResponse}> </h1>{" "}
     </div>
   );
 }
