@@ -1,4 +1,4 @@
-// import logo from "./logo.svg";
+import logo from "./logo.svg";
 import "./App.css";
 import React, { useRef } from "react";
 
@@ -94,6 +94,7 @@ function App() {
       </div>
 
       <h1 ref={displayResponse}></h1>
+      <h5>This site has Continuous Integration.</h5>
     </div>
   );
 }
